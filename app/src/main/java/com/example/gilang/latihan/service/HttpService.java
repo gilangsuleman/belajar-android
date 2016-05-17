@@ -1,5 +1,7 @@
 package com.example.gilang.latihan.service;
 
+import android.os.Bundle;
+
 import com.example.gilang.latihan.domain.Peserta;
 import com.example.gilang.latihan.dto.PesertaResponse;
 
@@ -18,7 +20,10 @@ import org.springframework.web.client.RestTemplate;
  */
 public class HttpService {
 
-    private static String BASE_URI = "http://192.168.1.41:8080/api/";
+    private static String portServer = "8080";
+    private static String ipServer = "192.168.1.41";
+
+    private static String BASE_URI = "http://"+ipServer+":"+portServer+"/api/";
 
     private RestTemplate restTemplate = new RestTemplate();
 

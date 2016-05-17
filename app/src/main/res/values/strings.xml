@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">latihan</string>
+    <string name="app_name">Belajar-Android</string>
+    <string name="ipServer">192.168.1.41</string>
 </resources>

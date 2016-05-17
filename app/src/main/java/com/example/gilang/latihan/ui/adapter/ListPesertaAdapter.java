@@ -32,6 +32,7 @@ public class ListPesertaAdapter extends BaseAdapter {
     private Context context;
     private List<Peserta> pesertas;
     HttpService service = new HttpService();
+    private boolean hapus;
 
     public ListPesertaAdapter(Context context, List<Peserta> pesertas) {
         this.context = context;
@@ -139,7 +140,9 @@ public class ListPesertaAdapter extends BaseAdapter {
 
         @Override
         protected ResponseEntity doInBackground(Void... params) {
+
             return service.deletePeserta(id);
+
         }
     }
 }
